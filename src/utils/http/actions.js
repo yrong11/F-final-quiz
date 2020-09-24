@@ -7,3 +7,7 @@ export function getTraineeList() {
 export function getTrainerList() {
   return httpClient.get('/trainers?grouped=false')
 }
+
+export function getGroupList() {
+  return httpClient.get('/groups')
+}
