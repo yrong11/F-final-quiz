@@ -15,7 +15,7 @@
 .group-info{
   margin: 0.75 * $basic-margin 0px;
   .group-name-input{
-    width: 100%;
+    width: 80%;
     height: 40px;
     text-align: center;
     background-color: $gray;
@@ -28,5 +28,15 @@
       padding-left: $middle-padding;
       border: 1px solid;
       border-color: $gray;
+  }
+}
+
+.group-info-header {
+  padding-top: 10px;
+  display: flex;
+  background-color: $gray;
+  align-items: center;
+  .group-trainer-info {
+    margin-bottom: 0px;
   }
 }
