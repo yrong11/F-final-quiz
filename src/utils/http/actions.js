@@ -11,3 +11,7 @@ export function getTrainerList() {
 export function getGroupList() {
   return httpClient.get('/groups')
 }
+
+export function divideGroups() {
+  return httpClient.post('/groups/auto-grouping')
+}
