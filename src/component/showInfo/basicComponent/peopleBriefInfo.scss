@@ -1,0 +1,22 @@
+@import '../../../style/variables';
+
+.people-info, .add-people-input{
+  background-color: $light-gray;
+  text-align: center;
+  padding: $small-padding;
+}
+
+
+  .add-people-input {
+    width: 100%;
+    border-color: $gray;
+  }
+
+.popver-content {
+  display: flex;
+  p {
+    margin-left: $small-margin;
+    padding: $small-padding;
+    background-color: $light-gray;
+  }
+}
