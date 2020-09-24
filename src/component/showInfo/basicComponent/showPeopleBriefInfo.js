@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Popover } from 'antd';
+import { Link } from 'react-router-dom';
 import './peopleBriefInfo.scss'
 
 class ShowPeopleBasciInfo extends Component {
   render() {
-    const { item } = this.props
+    const { item, addTrainee } = this.props
     const content = (
       <div className="popver-content">
         <p>name:{item.id}</p>
@@ -18,7 +19,7 @@ class ShowPeopleBasciInfo extends Component {
     return item.id !== -1 ? <Popover content={content}>
       <p className="people-info" >{`${item.id}.${item.name}`}</p>
     </Popover> :
-      <button className="add-people-input">+添加学员</button>
+      <Link exact="true" to='/create'><button className="add-people-input">+添加学员</button></Link>
   }
 }
 

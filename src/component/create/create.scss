@@ -1,0 +1,29 @@
+@import '../../style//variables';
+
+.add-trainee-container {
+  width: calc(100% - 50px);
+  margin: 1.5 * $basic-margin $basic-margin;
+  padding: 2 * $middle-padding;
+  background-color: white;
+}
+
+.add-trainee-container h4 {
+  font-size: 20px;
+  margin-top: 10px;
+
+}
+
+.from-item {
+  display: inline;
+}
+.add-trainee-container input {
+  width: 800px;
+}
+
+.trainee-btn {
+  text-align: left;
+  margin-top: $basic-margin;
+  button {
+    margin-right: $middle-margin;
+  }
+}

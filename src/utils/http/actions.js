@@ -15,3 +15,6 @@ export function getGroupList() {
 export function divideGroups() {
   return httpClient.post('/groups/auto-grouping')
 }
+export function addTrainee(trainee) {
+  return httpClient.post('/trainees', trainee)
+}

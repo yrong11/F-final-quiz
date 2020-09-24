@@ -15,6 +15,10 @@ class TraineeList extends Component {
     this.getTrainees()
   }
 
+  addTrainee = async(trainee) => {
+
+  }
+
   getTrainees = async () => {
     try {
       const response = await getTraineeList()
@@ -45,7 +49,7 @@ class TraineeList extends Component {
         dataSource={this.state.trainees}
         renderItem={item => (
           <List.Item>
-            <ShowPeopleBasciInfo item={item}/>
+            <ShowPeopleBasciInfo item={item} addTrainee={this.addTrainee.bind(this)}/>
           </List.Item>
         )}
       />
