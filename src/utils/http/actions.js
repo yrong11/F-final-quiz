@@ -19,6 +19,10 @@ export function addTrainee(trainee) {
   return httpClient.post('/trainees/', trainee)
 }
 
+export function addTrainer(trainer) {
+  return httpClient.post('/trainers/', trainer)
+}
+
 export function updateGroupName(name, id) {
   return httpClient.patch(`/groups/${id}`, {name})
 }

@@ -4,6 +4,8 @@ import 'antd/dist/antd.css';
 import "./App.scss"
 import ShowInfo from '../src/component/showInfo/ShowInfo'
 import CreateTrainee from '../src/component/create/CreateTrainee'
+import CreateTrainer from '../src/component/create/CreateTrainer'
+
 
 class App extends React.Component {
   render() {
@@ -13,7 +15,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={ShowInfo}></Route>
             <Route exact path="/create" component={CreateTrainee}></Route>
-
+            <Route exact path="/trainer/create" component={CreateTrainer}></Route>
           </Switch>
         </BrowserRouter>
     </div>
