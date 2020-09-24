@@ -16,5 +16,10 @@ export function divideGroups() {
   return httpClient.post('/groups/auto-grouping')
 }
 export function addTrainee(trainee) {
-  return httpClient.post('/trainees', trainee)
+  return httpClient.post('/trainees/', trainee)
 }
+
+export function updateGroupName(name, id) {
+  return httpClient.patch(`/groups/${id}`, {name})
+}
+

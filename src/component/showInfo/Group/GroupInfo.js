@@ -4,14 +4,39 @@ import { List } from 'antd';
 import './group.scss'
 
 class GroupInfo extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      group: this.props.group
+    }
+  }
+
+  handleKeyUp = (e) => {
+    e.preventDefault()
+    console.log(this.state.group)
+    if(e.keyCode === 13 && e.shiftKey === false) {
+      this.props.onChange(e.target.value, this.state.group.id)
+    }
+
+  }
+
+  handleChange = (e) => {
+    e.preventDefault()
+    this.state.group.name = e.target.value
+    this.setState({
+      group: this.state.group
+    })
+  }
+
   render() {
-    const { group } = this.props
     return <div className='group-info'>
-      <input className="group-name-input" type='text' value={group.name} />
+      <input className="group-name-input" type='text' value={this.state.group.name} 
+      onKeyUp={this.handleKeyUp} onChange={this.handleChange}
+      />
       <div className="group-people">
         <List
           grid={{ gutter: 16, column: 7 }}
-          dataSource={group.trainees}
+          dataSource={this.state.group.trainees}
           renderItem={itm => (
             <List.Item>
               <ShowPeopleBasciInfo

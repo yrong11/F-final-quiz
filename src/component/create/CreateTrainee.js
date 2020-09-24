@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Form, Input, message, Spin } from "antd";
-import { Link, Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import　{addTrainee} from '../../utils/http/actions'
 import './create.scss'
 
