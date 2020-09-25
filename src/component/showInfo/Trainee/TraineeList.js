@@ -15,6 +15,7 @@ class TraineeList extends Component {
     this.getTrainees()
   }
 
+  // TODO 去掉空方法
   addTrainee = async(trainee) => {
 
   }
@@ -36,6 +37,7 @@ class TraineeList extends Component {
     }
   }
 
+  // TODO 去掉空方法
   addTrainee = () => {
 
   }

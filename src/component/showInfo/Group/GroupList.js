@@ -64,6 +64,7 @@ class GroupList extends Component {
   render() {
     const data = this.state.groups
     return (
+      // TODO 多使用些语义化标签
       <div className="group-list">
         <div className="group-header">
           <h2>分组列表</h2>

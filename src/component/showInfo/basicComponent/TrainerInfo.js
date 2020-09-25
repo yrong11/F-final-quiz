@@ -3,6 +3,7 @@ import {Popover } from 'antd';
 import { Link } from 'react-router-dom';
 import './peopleBriefInfo.scss'
 
+// TODO 可以改写成函数时组件
 class TrainerInfo extends Component {
   render() {
     const { item } = this.props

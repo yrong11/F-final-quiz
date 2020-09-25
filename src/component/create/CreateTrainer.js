@@ -12,6 +12,7 @@ class CreateTrainer extends React.Component {
     }
   }
 
+  // TODO 提交成功后也需要返回列表页
   handleSubmit = async (value) => {
     this.handleLoading()
     console.log(value)

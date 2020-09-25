@@ -3,8 +3,10 @@ import { Popover } from 'antd';
 import { Link } from 'react-router-dom';
 import './peopleBriefInfo.scss'
 
+// TODO 可以改写成函数时组件
 class ShowPeopleBasciInfo extends Component {
   render() {
+    // TODO 冗余的变量 addTrainee
     const { item, addTrainee } = this.props
     const content = (
       <div className="popver-content">

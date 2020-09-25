@@ -3,6 +3,7 @@ import { message, List} from 'antd';
 import {getTrainerList} from '../../../utils/http/actions'
 import TrainerInfo from '../basicComponent/TrainerInfo'
 
+// TODO Trainer与Trainee list内容重复度高，思考可否抽取复用？
 class TrainerList extends Component {
   constructor(props) {
     super(props);
@@ -32,6 +33,7 @@ class TrainerList extends Component {
     }
   }
 
+  // TODO 方法名称不对，且要去掉空方法
   addTrainee = () => {
 
   }

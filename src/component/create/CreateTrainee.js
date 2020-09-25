@@ -12,6 +12,7 @@ class CreateTrainee extends React.Component {
     }
   }
 
+  // TODO 提交成功后也需要返回列表页
   handleSubmit = async (value) => {
     this.handleLoading()
     console.log(value)
@@ -38,6 +39,7 @@ class CreateTrainee extends React.Component {
     const layout = { labelCol: { span: 4 }, wrapperCol: { span: 18 } }
 
     return (
+      // TODO 试着多使用语义化标签
       <div className='add-trainee-container'>
         <Spin spinning={this.state.isloading}>
           <h4>添加学员</h4>
@@ -62,6 +64,7 @@ class CreateTrainee extends React.Component {
               name="email"
               rules={[{
                 required: true,
+                // TODO validator函数可以抽出来
                 validator: (_, value) =>
                   value && value.match(/^[A-Za-z0-9]+([_\.][A-Za-z0-9]+)*@([A-Za-z0-9\-]+\.)+[A-Za-z]{2,6}$/) ?
                     Promise.resolve() : Promise.reject('邮箱地址错误')

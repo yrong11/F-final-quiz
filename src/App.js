@@ -1,4 +1,6 @@
 import React from "react"
+// TODO 一般写 BrowserRouter as Router
+// TODO 去掉冗余的引用 NavLink
 import {Route, BrowserRouter, NavLink,Switch} from "react-router-dom";
 import 'antd/dist/antd.css';
 import "./App.scss"
